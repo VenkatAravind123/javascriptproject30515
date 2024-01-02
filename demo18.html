@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>demo18</title>
+        <script>
+           //Arrays
+           document.writeln("<u>Demo on Arrays</u></br>")
+           const s = [34,67,89]//same type of elements
+           document.writeln(s+"</br>")
+           document.writeln(typeof(s)+"</br>")
+           document.writeln(s.length+"</br>")
+           document.writeln(s[0]+"</br>")//34
+           document.writeln(s[2]+"</br>")//89
+           document.writeln(s[3]+"</br>")//undefined
+           document.writeln(typeof s[1]+"</br>")
+           s[1]=50
+           s[2]="cse"
+           document.writeln(s+"</br>")
+           s.push("mswd")//the element will be added at the end of the array
+           s.push(100)
+           document.writeln(s+"</br>")
+           s.pop()//the last element of the array is removed
+           document.writeln(s+"</br>")
+       
+           document.writeln(s.reverse()+"</br>")
+        //    s=s.reverse()//this operation is not possible because my array is a constant array
+        //    document.writeln(s+"</br>")
+           document.writeln(s.sort()+"</br>")//sort will sort the array
+           document.writeln("Array="+s+"</br>")
+           let element=s.shift()//shift method will remove the beginiing element
+           document.writeln(element+"</br>")
+           document.writeln("Array shifting="+s+"</br>")
+           let len = s.unshift(100.5)//unshift method will add an element at the beginning of the array
+           document.writeln(len+"</br>")
+           document.writeln("Ater Unshifting="+s+"</br>")
+           let len1  = s.unshift("aws",31,"pfsd")//unshift can also add multiple elements at the beginnig 
+           document.writeln(len1+"</br>")
+           document.writeln("Ater Unshifting="+s+"</br>")
+           document.writeln("<u>Displaying array elements using for loop</u></br>")
+           for(let i=0;i<s.length;i++)
+           {
+            document.writeln(s[i]+"</br>")
+           }
+           document.writeln("<u>Displaying array elements using for in loop</u></br>")
+           for(let i in s)
+           {
+            document.writeln(s[i]+"</br>")
+           }           
+           document.writeln("<u>Displaying array elements using for of loop</u></br>")
+           for(let element of s)
+           {
+            document.writeln(element+"</br>")
+           }
+           
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
